@@ -5,6 +5,7 @@ provider "azurerm" {
 module "london-scaleset" {
   source      = "./scaleset"
   location    = "uksouth"
+  time_zone = "GMT Standard Time"
   prefix      = "london"
   in          = "9"
   inmins      = "0"
@@ -15,6 +16,7 @@ module "london-scaleset" {
 module "paris-scaleset" {
   source      = "./scaleset"
   location    = "francecentral"
+  time_zone = "Central Europe Standard Time"
   prefix      = "paris"
   in          = "10"
   inmins      = "0"
@@ -25,6 +27,7 @@ module "paris-scaleset" {
 module "mumbai-scaleset" {
   source      = "./scaleset"
   location    = "eastasia"
+  time_zone = "India Standard Time"
   prefix      = "mumbai"
   in          = "2"
   inmins      = "30"
