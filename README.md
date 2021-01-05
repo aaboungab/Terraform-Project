@@ -21,6 +21,6 @@ The terraform application should deploy to multiple Scale Sets that are located 
 
 The maximum size should be 3 and during out of hours there should be no VM instances in the region, as this would incur cost. The lead architect has designed the overview for you to develop.
 
-## Architect
+## Architecture
 
 <img src="/061cb21e939291b48a5a51f2c47e4eba.png" alt="" width="100%" height="100%"/>
