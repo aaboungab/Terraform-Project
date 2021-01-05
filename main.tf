@@ -48,7 +48,7 @@ resource "azurerm_linux_virtual_machine" "TerraformP" {
 
   admin_ssh_key {
     username   = "azureuser"
-    public_key = file("~/.ssh/id_rsa.pub")
+    public_key = file("/home/aboun/.ssh/id_rsa.pub")
   }
 
   os_disk {
@@ -117,7 +117,7 @@ resource "azurerm_virtual_machine_scale_set" "TerraformP" {
 
     ssh_keys {
       path     = "/home/myadmin/.ssh/authorized_keys"
-      key_data = file("~/.ssh/demo_key.pub")
+      key_data = file("~/.ssh/id_rsa.pub")
     }
   }
 
