@@ -20,3 +20,7 @@ The use of all best practice should be implemented, this includes ensuring no se
 The terraform application should deploy to multiple Scale Sets that are located within the following regions: Paris, London; Mumbai. Each of the regions should be either: Development, Staging and Production, any region is fine to be any of the environment. The Scale Set in Paris should scale out between 10am - 3pm, for London, 9am - 5pm and in Mumbai, 2:30am - 10:30 pm.
 
 The maximum size should be 3 and during out of hours there should be no VM instances in the region, as this would incur cost. The lead architect has designed the overview for you to develop.
+
+## Architecture
+
+<img src="/061cb21e939291b48a5a51f2c47e4eba.png" alt="" width="100%" height="100%"/>
